@@ -3,32 +3,17 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ANGULARSECC4": {
+    "bases": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:class": {
-          "skipTests": true
-        },
         "@schematics/angular:component": {
-          "skipTests": true
+          "standalone": false
         },
         "@schematics/angular:directive": {
-          "skipTests": true
-        },
-        "@schematics/angular:guard": {
-          "skipTests": true
-        },
-        "@schematics/angular:interceptor": {
-          "skipTests": true
+          "standalone": false
         },
         "@schematics/angular:pipe": {
-          "skipTests": true
-        },
-        "@schematics/angular:resolver": {
-          "skipTests": true
-        },
-        "@schematics/angular:service": {
-          "skipTests": true
+          "standalone": false
         }
       },
       "root": "",
@@ -38,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angularsecc4",
+            "outputPath": "dist/bases",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -82,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ANGULARSECC4:build:production"
+              "buildTarget": "bases:build:production"
             },
             "development": {
-              "buildTarget": "ANGULARSECC4:build:development"
+              "buildTarget": "bases:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -93,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "ANGULARSECC4:build"
+            "buildTarget": "bases:build"
           }
         },
         "test": {
