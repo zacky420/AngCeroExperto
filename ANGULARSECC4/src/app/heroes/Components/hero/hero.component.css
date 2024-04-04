@@ -1,0 +1,22 @@
+/* Estilos para el encabezado */
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Estilos para la lista de definición */
+dl {
+  margin-top: 20px;
+}
+
+/* Estilos para las etiquetas de término */
+dl td {
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+/* Estilos para las descripciones */
+dl dd {
+  margin-left: 0;
+  padding-left: 10px;
+}

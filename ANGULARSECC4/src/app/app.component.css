@@ -1,0 +1,10 @@
+app-heroes-hero,
+app-heroes-list,
+app-counter {
+  display: block;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
