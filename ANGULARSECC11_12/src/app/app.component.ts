@@ -1,13 +1,22 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'ANGULARSECC11_12';
+export class AppComponent implements OnInit {
+  public title = 'Lehuek';
+
+  constructor(private primengConfig: PrimeNGConfig) { }
+
+  ngOnInit() {
+    this.primengConfig.ripple = true;
+  }
+
+
+
+
+
 }
