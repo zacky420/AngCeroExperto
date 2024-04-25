@@ -7,7 +7,6 @@ import { PrimeNGConfig } from 'primeng/api';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  public title = 'Lehuek';
 
   constructor(private primengConfig: PrimeNGConfig) { }
 
